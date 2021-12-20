@@ -9,20 +9,40 @@
 
     <body>
         <div>
-            <button>View Highscores</button>
+            <button id="view-scores">View Highscores</button>
             <p>Time: <span id="timer"></span></p>
         </div>
 
         <div>
             <h1 id="header">Coding Quiz</h1>
-            <p id="question"></p>
+            <p id="question">Try to answer the following code questions within the time limit. Keep in mind that inccorect answers will penalize your score/time by ten seconds!</p>
             <div>
-                <ul id="answers">
+                <ol id="answers">
                     
-                </ul>
+                </ol>
             </div>
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div id="high-scores-page">
+            <ol id="high-score-list">
+
+            </ul>
+            <div id="highscore-buttons">
+                <button id="go-back">Go Back</button>
+                <button id="clear">Clear Scores</button>
+            </div>
+        </div>
+
+        <div>
+            <form id="name-form">
+                Enter Initials:
+                <input type="text" name="player-form" placeholder="Your Name" />
+                <button>Submit</button>
+            </form>
+        </div>
+        <div>
             <p id="correctness"></p>
-            <button id="startbtn">Start</button>
         </div>
         <script src="./assets/script.js"></script>
     </body>
